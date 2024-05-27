@@ -313,9 +313,9 @@ h3{
     width: 24.99999%; /*24.99999%*/
 }
   
-@media only screen and (max-width: 1000px) { /*700px*/ /*DO NOT CHANGE*/
+@media only screen and (max-width: 700px) { /*700px*/
     .responsive {
-      width: 49.99999%; /*49.99999%*/
+      width: 100%; /*49.99999%*/
       margin: 6px 0;
     }
     
@@ -324,6 +324,21 @@ h3{
  @media only screen and (max-width: 500px) {
     .responsive {
       width: 100%;
+    }
+    div.gallery a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
     }
 
 }
@@ -354,14 +369,14 @@ div.gallery a{
     -ms-transform: translate(-50%, -50%);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    text-decoration: none;
 }
-
 
 div.desc{
     color: rgb(158, 122, 87);
@@ -370,13 +385,21 @@ div.desc{
     font-size: 15px;
     background-color: white;
     text-shadow: 0 0 1px black;
+    
 }
 
+div.desc  a{
+    text-decoration: none;
+    color: blue;
+    font-size: 13px;
+
+}
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-} /*end of projects section: Featured Posts gallery*/
+} /*end of projects section: restaurants*/
+
 
 
 
@@ -672,30 +695,30 @@ footer a{
         <h3><span style="font-size: 10px; font-family:'Times New Roman', Times, serif">Disclaimer: </span><br></h3>
         <div class="responsive">
             <div class="gallery">
-                <img src="images/" alt="" width="600" height="400">
-                <a href="">Buying A Property in Fuerteventura</a>
+                <img src="images/oceanvilla_jimlaura.webp" alt="oceanvilla_jimlaura" width="600" height="400">
+                <a href="comingsoon.html">Buying A Property in Fuerteventura <br>- <br>Read More</a>
                 <div class="desc"></div>
             </div>
         </div>
         <div class="responsive">
             <div class="gallery">
-                <img src="images/" alt="" width="600" height="400">
-                <a href="">Registering At The Local Townhall "Empadronarse"</a>
-                <div class="desc"></div>
+                <img src="images/hero_image_small.webp" alt="" width="600" height="400">
+                <a href="comingsoon.html">Registering At The Local Townhall "Empadronarse"</a>
+                <div class="desc">Coming Soon</div>
             </div>
         </div>
         <div class="responsive">
             <div class="gallery">
-                <img src="images/" alt="" width="600" height="400">
-                <a href="">Applying For Residency - EU Citizen</a>
-                <div class="desc"></div>
+                <img src="images/hero_image_small.webp" alt="" width="600" height="400">
+                <a href="comingsoon.html">Applying For Residency - EU Citizen</a>
+                <div class="desc">Coming Soon</div>
             </div>
         </div>
         <div class="responsive">
             <div class="gallery">
-                <img src="" alt="" width="600" height="400">
-                <a href="">Applying For Residency - Non EU Citizen</a>
-                <div class="desc"></div>
+                <img src="images/hero_image_small.webp" alt="" width="600" height="400">
+                <a href="comingsoon.html">Applying For Residency - Non EU Citizen</a>
+                <div class="desc">Coming Soon</div>
             </div>
         </div>
         <div class="clearfix"></div>
