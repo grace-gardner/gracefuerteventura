@@ -354,13 +354,8 @@ h2{
     
 }/*end of stament box*/
 
-div.gallery {
-  border: 1px solid #ccc;
-}
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+
 
 div.gallery img {
   width: 100%;
@@ -373,6 +368,7 @@ div.gallery p{
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;  
+    color: slategray;
 }
 
 
@@ -438,6 +434,50 @@ h3{
     text-align: center;
     color: rgb(158, 122, 87);
 }
+/*FOOTER SECTION*/
+
+footer{
+    background-color: rgb(198 197 174 / 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    text-align: center;
+    color: slategrey;
+    font-weight: lighter;
+    font-size: 13px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer a{
+    text-align: center;
+    text-decoration: underline;
+    color: slategray;
+}
+
+.arrow-up{
+    text-align: center;
+}
+
+.arrow-up a{
+    text-decoration: none;
+    color: rgb(158, 122, 87);
+    opacity: 1;
+    font-weight: bold;
+    font-size: 10px;
+}
+.arrow-up i{
+    padding-right: 5px;
+}
+
+
+/*END OF FOOTER SECTION*/
+
+
 
 </style>
 <body>
@@ -505,25 +545,24 @@ h3{
     <div class="white-div"></div>  <!--SECTION BREAKER-->
     <div class="white-div"></div>  <!--SECTION BREAKER-->
 
-    
-
-    <div class="responsive">
-        <div class="gallery">
-            <img src="images/bio6.png" alt="grace gardner" width="600" height="400">
+    <div class="responsive-container">
+        <div class="responsive">
+            <div class="gallery">
+                <img src="images/bio6.png" alt="grace gardner" width="400" height="400">
+            </div>
+        </div>
+        <br>
+        <div class="responsive">
+            <div class="gallery">
+                <p>Hi! I'm Grace, author of this blog and personally, my answer to the burning question above is <br> yes AND no! <br>Emotionally, yes! I'm super ready and super excited to move to Fuerteventura. <br> Mentally? No, not at all! Relocating to anywhere in the world is not easy, and I'm speaking from experience when I moved from the Phillipines to the UK. But back then, I was only 13 so a lot of the legalities and beurocracy were handled by my mum (thanks Ma!). This time, however, I have to fill out forms, compile legal documents and research the heck out of what needs to be done. It's so overwhelming, so much so that I feel like I need someone to hold my hand and guide me<span style='font-size:20px;'>&#128553;</span>I'm sure that there are lots of others out there who feel exactly like I do, <br>hence, the creation of fuerteventurafilipina.com <br>
+                </p>
+                <div class="desc"></div>
+            </div>
         </div>
     </div>
-    <br>
-    
 
-      
-      
-    <div class="responsive">
-        <div class="gallery">
-            <p>Hi! I'm Grace, author of this blog and personally, my answer to the burning question above is <br> yes AND no! <br>Emotionally, yes! I'm super ready and super excited to move to Fuerteventura. <br> Mentally? No, not at all! Relocating to anywhere in the world is not easy, and I'm speaking from experience when I moved from the Phillipines to the UK. But back then, I was only 13 so a lot of the legalities and beurocracy were handled by my mum (thanks Ma!). This time, however, I have to fill out forms, compile legal documents and research the heck out of what needs to be done. It's so overwhelming, so much so that I feel like I need someone to hold my hand and guide me<span style='font-size:20px;'>&#128553;</span>I'm sure that there are lots of others out there who feel exactly like I do, <br>hence, the creation of fuerteventurafilipina.com <br>
-            </p>
-            <div class="desc"></div>
-        </div>
-    </div>
+    
+    
       
 
     <div class="statement-box"> <!--statement box-->
@@ -545,7 +584,7 @@ h3{
     </div>
     <div class="statement-box">
         <div class="about-statement">
-            <p>First, let me ask you this - Do you think this website is <br> "amateur-ish"? <br> That's because it is! I am not a web developer by trade but I am proud to say that I hand coded everything on this website. During Covid lockdown in 2020, I was furloughed from my job at the time. I wanted to do something productive to pass the time. So, I started learning web coding for fun. I watched Youtube tutorials and read articles online and learned the basics and fundamentals of web development. <br> If you think, this website is <strong>meh</strong>, you should see the first few "practice websites" that I created &#128513; (You can find them on my Instagram page, if you fancy a bit of a laugh! &#128514;) <br>Anyway, when lockdown was over and it was time to face reality again, ie. going back to work (booo!), I completely pushed my learning to the bottom of my priority list until fast forward to 2024 when I had a "Eureka!" moment: I am going to create fuerteventurafilipina.com!       
+            <p>First, let me ask you this - Do you think this website is <br> "amateur-ish"? <br> That's because it is! I am not a web developer by trade but I am proud to say that I hand coded everything on this website. During Covid lockdown in 2020, I was furloughed from my job at the time. I wanted to do something productive to pass the time. So, I started learning how to code. I watched Youtube tutorials, read articles online and learned the basics of web development. <br> If you think, this website is <strong>meh</strong>, you should see some of the "practice websites" that I created &#128513; (You can find them on my Instagram page, if you fancy a bit of a laugh! &#128514;) <br>Anyway, when lockdown was over and it was time to face reality again, ie. going back to work (booo!), I completely pushed my learning to the bottom of my priority list until fast forward to 2024 when I had a "Eureka!" moment: I am going to create fuerteventurafilipina.com!       
             </p>
         </div>
     </div>
@@ -559,7 +598,7 @@ h3{
     </div>
     <div class="statement-box">
         <div class="about-statement">
-            <p>Whilst doing our research on how to apply for residency in Fuerteventura, a lot of the information we found online were pretty generic to the whole of Spain. Sure, the process are the same but we wanted to know how to it specifically in Fuerteventura, like, how and where in Fuerteventura do we lodge the application. What and where can we get the documents and application forms? We spent hours going through a lot of websites, forums, Facebook groups etc. That's when I realised, if only there's a website where everything specific to residency in Fuerteventura can be found online. <a href="https://fuertventurafilipina.com">fuerteventurafilipina.com</a> is exactly that! I got back into coding so I can create this amatuer (but unique) website which focuses specifically on relocating to Fuerteventura based on actual events that we personally undertook and documented to successfully relocate.  
+            <p>Like I said, fast forward to 2024, my husband and I decided to move to Fuerteventura. Whilst doing our research on how to apply for residency, a lot of the information we found online were pretty generic to the whole of Spain. Sure, the process are the same but we wanted to know how to do it specifically in Fuerteventura, like, how and where on the island do we lodge the application? What and where can we get the documents and application forms from? We spent hours going through a lot of websites, forums, Facebook groups etc. It was frustrating <span style='font-size:20px;'>&#129396;</span> <br> That's when I realised - if only there's a website where everything specific to residency in Fuerteventura can be found online. <br> <a href="https://fuertventurafilipina.com">fuerteventurafilipina.com</a> is exactly that! <br> I got back into coding so I can create this amatuer (but unique) website which focuses specifically on relocating to Fuerteventura based on actual events that we personally undertook and documented.
             </p>
         </div>
     </div>
@@ -573,10 +612,43 @@ h3{
     </div>
     <div class="statement-box">
         <div class="about-statement">
-            <p> 
+            <p>As mentioned in our intro, if you are planning to relocate to Fuerteventura but don't where to start, we're here for you. With this website, we want to help you by way of providing detailed "how-to-guide" to save you the hassle and hours of research so you can focus on what matters most - enoying your time on this paradise island! 
             </p>
         </div>
     </div>
+    <div class="statement-box">
+        <div class="about-statement">
+            <h3>Enough about us... <br> We want to know about you!</h3>
+        </div>
+    </div>
+    <div class="statement-box">
+        <div class="about-statement">
+            <p>We are so glad that you're here and thank you for taking the time to read through this jibber jabber. If you got this far of our About Us page, there must be at least one thing that we have in common that led you here, so we'd love to get to know you! <br> Are there any other topics about Fuerteventura that you'd like to discuss? Do you have any recommendations that you'd like us to feature on this site? Or perhaps you just simply want to chat about anything related to Fuerteventura? (we can't promise to know everything though!) <br> We'd love to hear from you <span style='font-size:20px;'>&#129321;</span> <br> You can reach out to us via social media or email. You can find all the details on our <a href="contact.html">Contact Page</a>
+            </p>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="arrow-up">
+        <a href="#home"><span style='font-size:15px;'>&#8593;</span> Back to Top <span style='font-size:15px;'>&#8593;</span></a>
+    </div>
+    <footer>
+        <div class="footer">
+            <hr>
+            <p>FuerteventuraFilipina &copy;2024 - All Rights Reserved. <br> Made with <span style="color: red;">&#9829;</span> by Me!<br><br>
+            <a href="about.html">About Us</a>   | <a href="">Contact Us</a> <br> - <br>
+            <a href="disclaimer.html">Disclaimer</a>  | <a href="termsandconditions.html">Terms Of Use</a>
+            </p>
+            <!--Cookie Policy-->
+            <p>
+                <a href="https://www.iubenda.com/privacy-policy/14820060/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+            <!--Privacy Policy-->
+                <a href="https://www.iubenda.com/privacy-policy/14820060" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+            </p>
+            
+        </div>
+    </footer>
+    <!--FOOTER ENDS HERE-->
    
     
 </body>
