@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Blog| FuerteventuraFilipina</title>
+    <title>Buying A Property In Fuerteventura | Blog Post</title>
     <meta name="description" content="A Non-EU Citizen's Journey of Moving to Fuerteventura">
-    <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Cache Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <link rel="icon" href="images/logo.webp">
-    <!--<link href="https://fonts.googleapis.com/css2?family=Allura&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Whisper&display=swap" rel="stylesheet">-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>-->
-    
+    <link rel="icon" href="images/logo.webp"> 
 </head>
 <style>
 html{
@@ -28,7 +24,6 @@ body{
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 
 /*Header*/
 header{
@@ -136,32 +131,27 @@ nav a:hover{
 }
 /*<end of header>*/
 
-.section-container{
-    width: 99.99%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /*hero section*/
 .hero-section{
     width: 100%;
     height: 420px;
     background-color: slategray;
-    background-image: url(../images/hero_image_large.webp);
+    background-image: url(../gracefuerteventura/images/oceanvilla_jimlaura2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
 }
 @media (max-width: 768px){
     .hero-section{
     width: 100%;
     height: 420px;
     background-color: slategray;
-    background-image: url(../images/hero_image_small.webp);
+    background-image: url(../gracefuerteventura/images/oceanvilla_jimlaura2.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
 }
 }
 
@@ -179,15 +169,18 @@ nav a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
+
 .hero-image{
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 40px;
+    
 }
 
-.hero-image video{
+.hero-image img{
     border: 1px solid #f2f2f2;
     box-shadow: 0 0 25px #f2f2f2;
     border-radius: 4px;
@@ -197,8 +190,11 @@ nav a:hover{
     
 }
 
+
+
 .hero-image video:hover{
     box-shadow: 0 0 2px 1px white; 
+   
 }
 h1{
     text-align: center;
@@ -244,6 +240,30 @@ h2{
 }
 /*end of hero section*/
 
+/*image gallery*/
+.gallery{
+    width: 100%;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img{
+    border: 1px solid rgb(198, 197, 174);
+    box-shadow: 0 0 5px rgb(198, 197, 174);
+    border-radius: 4px;
+    max-width: 150px;
+    width: 130px;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.gallery img:hover{
+    box-shadow: 0 0 2px 1px rgb(158, 122, 87);
+}/*end of image gallery*/
+
+
 .white-div{
     max-width: 100%;
     margin-left: auto;
@@ -260,36 +280,72 @@ h2{
     justify-content: center;
     align-items: center; 
 }
-
-
-/*feature sections*/
-.section{
+/*STATEMENT BOX*/
+.statement-box{
     width: 100%;
-    height: auto;
-    background-color: rgb(241, 237, 231);  
-}
-.feature-section{
-    width: 100%;
-    height: auto;
+    height: 345px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.feature-section img{ /*section title images*/
-    max-width: 230px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-}/*end of feature sections*/
-
-/*projects section: Featured Posts gallery*/
-
-.project-section{
-    background-size: cover;
+    position: relative; 
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
+@media (max-width: 621px){
+    .statement-box{
+        width: 100%;
+        height: 345px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.statement-container{
+    width: 290px;
+    height: auto;
+    border: 1px solid rgb(203 170 133);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    opacity: 0.9;
+    position: relative;
+    margin-top: 50px;
+}
+.statement-container p{
+    font-size: 15px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 10;
+    position: relative;   
+}
+.statement-container p span{
+    font-size: 15px;
+}
+.statement-container a{
+    text-decoration: none;
+    color: rgb(158, 122, 87);
+    text-shadow: 0 0 1px black;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: none;
+    position: relative;
+}
+.statement-container a:hover{
+    background-color: white;
+}
+.statement-container .quote{
+    color: slategrey;
+    font-size: 15px;
+    
+}/*end of stament box*/
+
+
+/*text section*/
 h3{
     text-align: center;
     margin-top: 25px;
@@ -303,233 +359,61 @@ h3{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
-
-* {
-    box-sizing: border-box;
-}
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%; /*24.99999%*/
-}
-  
-@media only screen and (max-width: 700px) { /*700px*/
-    .responsive {
-      width: 100%; /*49.99999%*/
-      margin: 6px 0;
-    }
-    
-}
-  
- @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-    div.gallery a{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    color: white;
-    font-size: 10px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+.about p{
     text-align: center;
-    text-decoration: none;
-    }
+    font-size: 11.5px;
+    color: rgb(17, 19, 22);
+    font-weight: bold;
+    padding-left: 13px; 
+    padding-right: 13px;  
+    padding-bottom: 150px;
+}
 
+#about span{
+    font-size: 5px;
 }
-div.gallery{
-    /*border: 1px solid #ccc; /*1px solid #ccc*/
-    background-color: white; /*rgb(158, 122, 87)*/
-    position: relative;
+
+#about span a{
+    text-decoration: none;
+    font-size: 5px;
 }
-  
-div.gallery:hover{
-    border: 1px solid #777;
-    background-color: darkgrey;
-    opacity: 0.5;
-    transform: translateY(-.5rem);
-}
-  
-div.gallery img{
-    width: 100%;
+
+.about-statement{
+    width: 545px;
     height: auto;
-    border: 3px solid #ddd;
+    /*margin-top: 350px;*/
+    /*border: 1px solid rgba(158, 122, 87);*/
 }
 
-div.gallery a{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    color: white;
-    font-size: 12px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-}
-
-div.desc{
-    color: rgb(158, 122, 87);
-    padding: 15px;
+.about-statement p{
     text-align: center;
     font-size: 15px;
-    background-color: white;
-    text-shadow: 0 0 1px black;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-right: 20px;
     
 }
 
-div.desc  a{
+.about-statement a{
     text-decoration: none;
-    color: blue;
-    font-size: 13px;
-
+    color: rgb(158, 122, 87);
 }
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-} /*end of projects section: restaurants*/
+/*end of text section*/
 
 
 
 
-/*IMAGE CAROUSEL*/
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.slideshow-container img{
-    width: 100%;
-    height: auto;
-}
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 28px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  /*animation: color 5s  ease-out infinite;*/
-}
-
-@keyframes color{
-    from {background-color: rgba(246, 244, 242, 0.529);} /*rgba(255, 157, 0, 0.529)*/
-    to {background-color: rgb(219, 206, 206);} /*rgb(219, 206, 206)*/
-  }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.1);
-}
-
-/* Number text (1/3 etc) */
-.numbertext{
-  color: white;
-  font-size: 25px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 75%;
-  left: 10%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
-}
-
-#image-quote{
-    color: white;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 55%;
-    left: 15%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
-}
-
-@media (max-width: 800px){
-    .numbertext{
-        color: white;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 75%;
-        left: 10%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
-    }
-    #image-quote{
-        color: white;   
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 55%;
-        left: 15%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
-    }
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 2.5s ease-in;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 0.8}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-/*END OF CAROUSEL*/
 
 
 /*contact section*/
+h3{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 22px;
+    color: rgb(158, 122, 87);
+}
+
 #contact{
     background-color: rgb(241, 237, 231);
 }
@@ -631,17 +515,11 @@ footer a{
     color: slategray;
 }
 
-hr{
-    width: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    color: rgb(198, 197, 174);
-}
+
 /*END OF FOOTER SECTION*/
 
 
 </style>
-
 <body>
     <!--NAVIGATION-->
     <header id="home">
@@ -665,129 +543,65 @@ hr{
     <div class="white-div"></div>  <!--SECTION BREAKER-->
     <div class="white-div"></div>  <!--SECTION BREAKER-->
     <div class="white-div"></div>  <!--SECTION BREAKER-->
-   
 
     <!--HERO SECTION-->
     <div class="hero-section">
         <div class="hero-image-container">
             <div class="hero-image">
-                <video autoplay muted loop playsinline poster="">
-                    <source src="" type="video/mp4">
-                </video>
+                <img src="images/oceanvilla_jimlaura.webp" alt="">
                 <div class="clearfix"></div>
             </div>
             <div class="hero-text-container">
-                <h1>FuerteventuraFilipina</h1>
-                <h2>The Blog</h2>
+                <h1>Buying A Property</h1>
+                <h2>In Fuerteventura</h2>
             </div>
         </div>
     </div>
     <!--END OF HERO SECTION-->
 
     <div class="white-div"></div> <!--SECTION BREAKER-->
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-    <div class="white-div"></div> <!--SECTION BREAKER-->
 
-    <!--FEATURED POSTS-->
-    <div class="feature-section">
-        <img src="images/featured_posts.webp" alt="featured recommendations">
+    <!--IMAGE GALLERY-->
+    <div class="section">
+        <div class="statement-box">
+            <div class="statement-container">
+                <p><span class="quote"><strong><em>"If you look at what you have in life, <br>you'll always have enough. <br>If you look at what you don't have in life, <br> you'll never have enough" </em><br>- cto -</strong></span><br></p>
+            </div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="images/oceanvilla1.webp">
+                <img src="images/oceanvilla1.webp" alt="oceanvilla_jimlaura">
+            </a>
+            <a target="_blank" href="images/oceanvilla2.webp">
+                <img src="images/oceanvilla2.webp" alt="oceanvilla_jimlaura">
+            </a>
+            <div class="clearfix"></div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="images/oceanvilla3.jpg">
+                <img src="images/oceanvilla3.jpg" alt="oceanvilla_jimlaura">
+            </a>
+            <a target="_blank" href="images/oceanvilla4.jpg">
+                <img src="images/oceanvilla4.jpg" alt="oceanvilla_jimlaura">
+            </a>
+            <div class="clearfix"></div>
+        </div>
     </div>
-    <!--FEATURED POSTS ENDS HERE-->
+    <!--END OF IMAGE GALLERY-->
 
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-
-    <!--PROJECT: FEATURED POSTS GALLERY-->
-    <div class="project-section">
-        <h3><span style="font-size: 10.5px; font-family:'Times New Roman', Times, serif">Disclaimer: These posts are for informational purposes only<br>and does not constitute any form of advice.<br>Please read our Disclaimer page for full details.</span>
-        </h3>
-        <div class="responsive">
-            <div class="gallery">
-                <img src="images/oceanvilla_jimlaura.webp" alt="oceanvilla_jimlaura" width="600" height="400">
-                <a href="buyingaproperty.html" target="_blank">Buying A Property in Fuerteventura <br>- <br>Read More</a>
-                <div class="desc"></div>
-            </div>
+    <!--TEXT-->
+    <h3><span style="font-size: 10.5px; font-family:'Times New Roman', Times, serif">Disclaimer: These posts are for informational purposes only<br>and does not constitute any form of advice.<br>Please read our Disclaimer page for full details.</span>
+    </h3>
+    <div class="statement-box">
+        <div class="about-statement">
+            <p>In 2021, my husband and I decided to buy a property in Fuerteventura. As per usual, we have done a lot of research on the internet. Our main priority was the location and of course, our budget. Having been on a holiday to the south of the isalnd in Jandia for a holiday, we wanted to find out more about the north, Corralejo. We focused our search for this area of the island. Our 
+            </p>
         </div>
-        <div class="responsive">
-            <div class="gallery">
-                <img src="images/hero_image_small.webp" alt="" width="600" height="400">
-                <a href="comingsoon.html" target="_blank">Registering At The Local Townhall "Empadronarse"</a>
-                <div class="desc">Coming Soon - Follow us on social media to get notified of our latest posts</div>
-            </div>
-        </div>
-        <div class="responsive">
-            <div class="gallery">
-                <img src="images/hero_image_small.webp" alt="" width="600" height="400">
-                <a href="comingsoon.html" target="_blank">Applying For Residency - EU Citizen</a>
-                <div class="desc">Coming Soon - Follow us on social media to get notified of our latest posts</div>
-            </div>
-        </div>
-        <div class="responsive">
-            <div class="gallery">
-                <img src="images/hero_image_small.webp" alt="" width="600" height="400">
-                <a href="comingsoon.html" target="_blank">Applying For Residency - Non EU Citizen</a>
-                <div class="desc">Coming Soon - Follow us on social media to get notified of our latest posts</div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
     </div>
-    <div class="desc"></div>
-    <!--PROJECT: RESTAURANTS ENDS HERE-->
-
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-
-    
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-
-    <!--RELATED ARTICLES
-    <h3 id="about">Related Articles</h3> 
-    <br>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">"You have succeeded in life <br>when all you really want <br> is only what you really need"<br>-cto-</div>
-          <img src="images/familypic1.webp" alt="collage 1">
-          <div class="text"></div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">"One day, life will flash before your eyes...<br>make sure it's worth watching" <br>-cto-</div>
-          <img src="images/familypic2.webp" alt="collage 2">
-          <div class="text"></div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext" id="image-quote">"...And above all, watch with glittering eyes <br> the whole world around you <br>because the greatest secrets are always <br>hidden in the most unlikely places. <br> Those who don't believe in magic... <br>will never find it. <br>-Roald Dahl-</div>
-          <img src="images/familypic3.webp" alt="collage 3">
-          <div class="text"></div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        
-    </div>
-    <br> 
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>-->
-    
-    
-    
-    
-
+    <!--END OF TEXT-->
     
 
 
-    <div class="white-div"></div>
-    <div class="white-div"></div>
-    <div class="white-div"></div>
-    <div class="white-div"></div>
-
-    <!--CONTACT-->
     <div id="contact">
         <h3>Subscribe | Like | Share</h3>
         <div class="contact-wrapper">
@@ -817,8 +631,8 @@ hr{
     <footer>
         <div class="footer">
             <hr>
-            <p>FuerteventuraFilipina &copy;2024 - All Rights Reserved. <br> Made with <span style="color: red;">&#9829;</span> by Me!<br><br> 
-            <a href="about.html" target="_blank">About Us</a>   | <a href="comingsoon.html" target="_blank">Contact Us</a> <br> - <br>
+            <p>FuerteventuraFilipina &copy;2024 - All Rights Reserved. <br> Made with <span style="color: red;">&#9829;</span> by Me!<br><br>
+            <a href="about.html" target="_blank">About Us</a>   | <a href="contact.html" target="_blank">Contact Us</a> <br> - <br>
             <a href="disclaimer.html" target="_blank">Disclaimer</a>  | <a href="termsandconditions.html" target="_blank">Terms Of Use</a>
             </p>
             <!--Cookie Policy-->
@@ -833,13 +647,36 @@ hr{
     <!--FOOTER ENDS HERE-->
 
 
-    
 
 
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script>
@@ -870,5 +707,6 @@ hr{
           dots[slideIndex-1].className += " active";
         }
         </script>
+    
 </body>
 </html>
