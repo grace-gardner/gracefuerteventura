@@ -490,6 +490,16 @@ div.gallery{
     /*border: 1px solid #ccc; /*1px solid #ccc*/
     background-color: white; /*rgb(158, 122, 87)*/
 }
+
+@media (max-width:500px){
+    div.gallery{
+    /*border: 1px solid #ccc; /*1px solid #ccc*/
+    background-color: white; /*rgb(158, 122, 87)*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
   
 div.gallery:hover{
     border: 1px solid #777;
@@ -501,7 +511,7 @@ div.gallery:hover{
 div.gallery img{
     width: 100%;
     height: auto;
-    border: 3px solid #ddd;
+    
 }
 
 div.desc{
@@ -538,6 +548,21 @@ div.desc  a{
     justify-content: space-evenly;
     align-items: center;
 }
+
+@media (max-width: 580px){
+    .video-box{
+    max-width: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+}
+}
+
 .social{
     /*width: 500px;*/
     height: auto; /*545px*/
@@ -549,7 +574,6 @@ div.desc  a{
     height: 250px;
     position: relative;
     opacity: 0.9;
-    border: 1px solid rgb(198, 197, 174);
     box-shadow: 0 0 10px rgb(158 122 87 / 36%);
 }
 hr{
@@ -1138,18 +1162,19 @@ footer a{
     <div class="video-box">
         <div class="social">
             <div class="desc">Gus Abarquez <br>Rock Island Bar - <br>Corralejo</div>
-            <video muted loop playsinline controls poster="images/gus_vid_background.webp">
-                <source src="videos/gus_shortversion.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline controls poster="images/gus_vid_background.webp">
+                <source src="videos/gus_mp4.mp4" type="video/mp4">
             </video>
         </div>
     </div>
     <br>
     <hr>
+    
     <div class="video-box">
         <div class="social">
             <div class="desc">Ollie White <br> Smokehouse Bar - <br>Caleta De Fuste</div>
-            <video muted loop playsinline controls poster="images/ollie_vid_background.webp">
-                <source src="videos/ollie_shortversion.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline controls poster="images/ollie_vid_background.webp">
+                <source src="videos/ollie_mp4.mp4" type="video/mp4">
             </video>
         </div>
     </div>
