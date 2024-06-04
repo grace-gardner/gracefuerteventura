@@ -25,6 +25,8 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+
 /*Header*/
 header{
     text-align: center;
@@ -283,7 +285,6 @@ h2{
 /*STATEMENT BOX*/
 .statement-box{
     width: 100%;
-    height: 345px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +296,6 @@ h2{
 @media (max-width: 621px){
     .statement-box{
         width: 100%;
-        height: 345px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -399,6 +399,12 @@ h3{
     color: rgb(158, 122, 87);
 }
 /*end of text section*/
+
+/*video*/
+
+
+
+/*end of video*/
 
 
 
@@ -522,130 +528,156 @@ footer a{
 </style>
 <body>
     <!--NAVIGATION-->
-    <header id="home">
-        <div class="logo"><img src="images/logo.webp" alt="#fuerteventurafilipina"></div>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="blog.html" target="_blank">Blog</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
-            </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label"> 
-            <span></span>
-        </label>
-    </header>
-    <!--END OF NAVIGATION-->
-
-    <div class="white-div"></div>  <!--SECTION BREAKER-->
-    <div class="white-div"></div>  <!--SECTION BREAKER-->
-    <div class="white-div"></div>  <!--SECTION BREAKER-->
-    <div class="white-div"></div>  <!--SECTION BREAKER-->
-
-    <!--HERO SECTION-->
-    <div class="hero-section">
-        <div class="hero-image-container">
-            <div class="hero-image">
-                <img src="images/oceanvilla_jimlaura.webp" alt="">
+    <div class="container">
+        <header id="home">
+            <div class="logo"><img src="images/logo.webp" alt="#fuerteventurafilipina"></div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label"> 
+                <span></span>
+            </label>
+        </header>
+        <!--END OF NAVIGATION-->
+    
+        <div class="white-div"></div>  <!--SECTION BREAKER-->
+        <div class="white-div"></div>  <!--SECTION BREAKER-->
+        <div class="white-div"></div>  <!--SECTION BREAKER-->
+        <div class="white-div"></div>  <!--SECTION BREAKER-->
+    
+        <!--HERO SECTION-->
+        <div class="hero-section">
+            <div class="hero-image-container">
+                <div class="hero-image">
+                    <img src="images/oceanvilla_jimlaura.webp" alt="">
+                    <div class="clearfix"></div>
+                </div>
+                <div class="hero-text-container">
+                    <h1>Buying A Property</h1>
+                    <h2>In Fuerteventura</h2>
+                </div>
+            </div>
+        </div>
+        <!--END OF HERO SECTION-->
+    
+        <div class="white-div"></div> <!--SECTION BREAKER-->
+    
+        <!--IMAGE GALLERY-->
+        <div class="section">
+            <div class="statement-box">
+                <div class="statement-container">
+                    <p><span class="quote"><strong><em>"If you look at what you have in life, <br>you'll always have enough. <br>If you look at what you don't have in life, <br> you'll never have enough" </em><br>- cto -</strong></span><br></p>
+                </div>
+            </div>
+    
+            <div class="white-div"></div> <!--SECTION BREAKER-->
+            <div class="white-div"></div> <!--SECTION BREAKER-->
+            <div class="white-div"></div> <!--SECTION BREAKER-->
+            <div class="white-div"></div> <!--SECTION BREAKER-->
+    
+            <div class="gallery">
+                <a target="_blank" href="images/oceanvilla1.webp">
+                    <img src="images/oceanvilla1.webp" alt="oceanvilla_jimlaura">
+                </a>
+                <a target="_blank" href="images/oceanvilla2.webp">
+                    <img src="images/oceanvilla2.webp" alt="oceanvilla_jimlaura">
+                </a>
                 <div class="clearfix"></div>
             </div>
-            <div class="hero-text-container">
-                <h1>Buying A Property</h1>
-                <h2>In Fuerteventura</h2>
+            <div class="gallery">
+                <a target="_blank" href="images/oceanvilla3.jpg">
+                    <img src="images/oceanvilla3.jpg" alt="oceanvilla_jimlaura">
+                </a>
+                <a target="_blank" href="images/oceanvilla4.jpg">
+                    <img src="images/oceanvilla4.jpg" alt="oceanvilla_jimlaura">
+                </a>
+                <div class="clearfix"></div>
             </div>
         </div>
-    </div>
-    <!--END OF HERO SECTION-->
-
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-
-    <!--IMAGE GALLERY-->
-    <div class="section">
-        <div class="statement-box">
-            <div class="statement-container">
-                <p><span class="quote"><strong><em>"If you look at what you have in life, <br>you'll always have enough. <br>If you look at what you don't have in life, <br> you'll never have enough" </em><br>- cto -</strong></span><br></p>
-            </div>
-        </div>
-        <div class="gallery">
-            <a target="_blank" href="images/oceanvilla1.webp">
-                <img src="images/oceanvilla1.webp" alt="oceanvilla_jimlaura">
-            </a>
-            <a target="_blank" href="images/oceanvilla2.webp">
-                <img src="images/oceanvilla2.webp" alt="oceanvilla_jimlaura">
-            </a>
-            <div class="clearfix"></div>
-        </div>
-        <div class="gallery">
-            <a target="_blank" href="images/oceanvilla3.jpg">
-                <img src="images/oceanvilla3.jpg" alt="oceanvilla_jimlaura">
-            </a>
-            <a target="_blank" href="images/oceanvilla4.jpg">
-                <img src="images/oceanvilla4.jpg" alt="oceanvilla_jimlaura">
-            </a>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <!--END OF IMAGE GALLERY-->
-
-    <!--TEXT-->
-    <h3><span style="font-size: 10.5px; font-family:'Times New Roman', Times, serif">Disclaimer: These posts are for informational purposes only<br>and does not constitute any form of advice.<br>Please read our Disclaimer page for full details.</span>
-    </h3>
-    <div class="statement-box">
-        <div class="about-statement">
-            <p>In 2021, my husband and I decided to buy a property in Fuerteventura. As per usual, we have done a lot of research on the internet. Our main priority was the location and of course, our budget. Having been on a holiday to the south of the isalnd in Jandia for a holiday, we wanted to find out more about the north, Corralejo. We focused our search for this area of the island. Our 
-            </p>
-        </div>
-    </div>
-    <!--END OF TEXT-->
+        <!--END OF IMAGE GALLERY-->
     
-
-
-    <div id="contact">
-        <h3>Subscribe | Like | Share</h3>
-        <div class="contact-wrapper">
-            <p>If you find any of our posts helpful/informative or if you want to ask questions/post comments, please follow our social media platforms and subscribe to our channel. <br> Thank You! <span style="color: black;">&#9829;</span> <br><!-- If you would like more information or have any questions about any of our featured <strong>posts</strong>, <br> please get in touch and we'd be happy to answer your questions as best as we can. <br>-->
-            </p> 
-            <div class="contact">
-                <a href="https://www.facebook.com/profile.php?id=61558469307333" target="_blank">
-                    <img src="images/facebook.webp" alt="">Facebook
-                </a>
-                <a href="https://www.youtube.com/channel/UCeS54E_2U7tFnMrOcmo2vEQ" target="_blank">
-                    <img src="images/youtube.webp" alt="">Youtube
-                </a>
-                <a href="https://www.instagram.com/grace_patalod_gardner?igsh=MWp1bjEzaDk5Zmlsaw==" target="_blank">
-                    <img src="images/instagram.webp" alt="">Instagram
-                </a>
+        <!--TEXT-->
+        <h3><span style="font-size: 10.5px; font-family:'Times New Roman', Times, serif">Disclaimer: These posts are for informational purposes only<br>and does not constitute any form of advice.<br>Please read our Disclaimer page for full details.</span>
+        </h3>
+        <div class="statement-box">
+            <div class="about-statement">
+                <p>In 2021, my husband and I decided to buy a property in Fuerteventura. As per usual, we have done a lot of research on the internet. Our main priority was the location and of course, our budget. Having been on a holiday to the south of the island in Jandia,  we wanted to find out more about the north, Corralejo. We focused our search for this area of the island and our main resource was the website<a href="https://www.aplaceinthesun.com/" target="_blank">A Place In The Sun.</a>We narrowed down a list of properties that interested us and got in touch with the estate agent who coincendentally are located in Corralejo, <a href="https://goldacreestates.com/" target="_blank">Goldacre Estates</a>.
+                </p>
             </div>
-            <div class="beige-div"></div>
         </div>
-    </div>
-    <br>
-    <div class="arrow-up">
-        <a href="#home"><span style='font-size:15px;'>&#8593;</span> Back to Top <span style='font-size:15px;'>&#8593;</span></a>
-    </div>
-    <!--CONTACT SECTION ENDS HERE-->
-
-    <!--FOOTER-->
-    <footer>
-        <div class="footer">
-            <hr>
-            <p>FuerteventuraFilipina &copy;2024 - All Rights Reserved. <br> Made with <span style="color: red;">&#9829;</span> by Me!<br><br>
-            <a href="about.html" target="_blank">About Us</a>   | <a href="contact.html" target="_blank">Contact Us</a> <br> - <br>
-            <a href="disclaimer.html" target="_blank">Disclaimer</a>  | <a href="termsandconditions.html" target="_blank">Terms Of Use</a>
-            </p>
-            <!--Cookie Policy-->
-            <p>
-                <a href="https://www.iubenda.com/privacy-policy/14820060/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-            <!--Privacy Policy-->
-                <a href="https://www.iubenda.com/privacy-policy/14820060" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-            </p>
-            
+        <!--END OF TEXT-->
+    
+        <h3>Viewing Properties</h3> 
+    
+        <!--TEXT-->
+        <div class="statement-box">
+            <div class="about-statement">
+                <p>On the day of our appointment with the estate agent, the lovely and ever so cheerful agent Alex, picked us up from the hotel that we were staying at and took us to view 2 properties in Corralejo. We were not impressed with the first 2 properties. We just didn't get the feeling of "our forever home". So back to the drawing board we went and Alex suggested a different location, about a 30 minute drive down south of Corralejo, a little town called Costa De Antigua. <br> As it was our first time being on the east coast of the island, we weren't very keen at looking at properties in that area but Alex drove around Puerto Del Rosario and Caleta De Fuste, pointing out landmarks and interesting places that are within easy commute from Costa De Antigua. Finally, we arrived in a quaint little village of Nuevo Horizonte. We drove past a couple of holiday resort hotels, an English pub, an Irish bar, a couple of other English little cafes and restaurants, a Chinese restaurant, an Indian restaurant, a couple of mini-markets until he finally pulls up in front of a gated urbanization called Ocean Villas. As we walked through the gate, the first thing that greeted us was the seaview at the far end of the complex. We then turned into one of the villas and he said, here it is. <br>
+                <strong>And there it was indeed!</strong>. A detached, 3 bedroom villa with a front porch, wrap around garden, a plunge pool, large garage and a roof terrace with sea and mountain views. Myself, my husband and our daughter were in unison, this is "the one". As fate would have it, it didn't matter where we planned to buy, we didn't find this property, it found us.</p>
+            </div>
         </div>
-    </footer>
-    <!--FOOTER ENDS HERE-->
-
+       
+        
+        <!--END OF TEXT-->
+    
+        
+    
+    
+        
+    
+    
+        <div id="contact">
+            <h3>Subscribe | Like | Share</h3>
+            <div class="contact-wrapper">
+                <p>If you find any of our posts helpful/informative or if you want to ask questions/post comments, please follow our social media platforms and subscribe to our channel. <br> Thank You! <span style="color: black;">&#9829;</span> <br><!-- If you would like more information or have any questions about any of our featured <strong>posts</strong>, <br> please get in touch and we'd be happy to answer your questions as best as we can. <br>-->
+                </p> 
+                <div class="contact">
+                    <a href="https://www.facebook.com/profile.php?id=61558469307333" target="_blank">
+                        <img src="images/facebook.webp" alt="">Facebook
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCeS54E_2U7tFnMrOcmo2vEQ" target="_blank">
+                        <img src="images/youtube.webp" alt="">Youtube
+                    </a>
+                    <a href="https://www.instagram.com/grace_patalod_gardner?igsh=MWp1bjEzaDk5Zmlsaw==" target="_blank">
+                        <img src="images/instagram.webp" alt="">Instagram
+                    </a>
+                </div>
+                <div class="beige-div"></div>
+            </div>
+        </div>
+        <br>
+        <div class="arrow-up">
+            <a href="#home"><span style='font-size:15px;'>&#8593;</span> Back to Top <span style='font-size:15px;'>&#8593;</span></a>
+        </div>
+        <!--CONTACT SECTION ENDS HERE-->
+    
+        <!--FOOTER-->
+        <footer>
+            <div class="footer">
+                <hr>
+                <p>FuerteventuraFilipina &copy;2024 - All Rights Reserved. <br> Made with <span style="color: red;">&#9829;</span> by Me!<br><br>
+                <a href="about.html" target="_blank">About Us</a>   | <a href="contact.html" target="_blank">Contact Us</a> <br> - <br>
+                <a href="disclaimer.html" target="_blank">Disclaimer</a>  | <a href="termsandconditions.html" target="_blank">Terms Of Use</a>
+                </p>
+                <!--Cookie Policy-->
+                <p>
+                    <a href="https://www.iubenda.com/privacy-policy/14820060/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                <!--Privacy Policy-->
+                    <a href="https://www.iubenda.com/privacy-policy/14820060" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                </p>
+                
+            </div>
+        </footer>
+        <!--FOOTER ENDS HERE-->
+    
+    </div>
+    
 
 
 
