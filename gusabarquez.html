@@ -9,8 +9,8 @@
     <meta http-equiv="Cache Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <link rel="icon" href="https://yt3.googleusercontent.com/wXGzsjgWp4NZfEkoMEEBGHlQApgJ1cYq2wLHlAP9jcBWxe1zI_GYyNRie2igJ1syShj9s9sxkg=s176-c-k-c0x00ffffff-no-rj">
-    
+    <!--<link href="https://fonts.googleapis.com/css2?family=Allura&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Whisper&display=swap" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>-->
     
 </head>
 <style>
@@ -58,7 +58,7 @@ header .logo{
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 1em;
+    margin-left: 3em;
     color: red;
     height: 100%;
     display: flex;
@@ -110,7 +110,7 @@ nav ul{
 
 nav li{
     margin-bottom: 1em;
-    margin-left: 1em;
+    margin-left: 3em;
 }
 
 nav a{
@@ -147,7 +147,7 @@ nav a:hover{
     width: 100%;
     height: 420px;
     background-color: slategray;
-    background-image: url(../images/hero_image_large.webp);
+    background-image: url(../gracefuerteventura/images_gus/gus_logo.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,8 +157,8 @@ nav a:hover{
     width: 100%;
     height: 420px;
     background-color: slategray;
-    background-image: url(../images/hero_image_small.webp);
-    background-position: top;
+    background-image: url(../gracefuerteventura/images_gus/gus_logo.webp);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -190,7 +190,7 @@ nav a:hover{
 .hero-image video{
     border: 1px solid #f2f2f2;
     box-shadow: 0 0 25px #f2f2f2;
-    border-radius: 4px;
+    border-radius: 50%;
     padding: 5px;
     width: 300px; 
     height: 320px;
@@ -207,9 +207,8 @@ h1{
     text-align: center;
     text-transform: capitalize;
     font-family:'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 15px;
-    color: white;
+    font-size: 25px;
+    color: teal;
     letter-spacing: 2px;
     font-weight: lighter;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
@@ -220,12 +219,11 @@ h1{
         text-align: center;
         text-transform: capitalize;
         font-family:'Times New Roman', Times, serif;
-        font-style: italic;
-        font-size: 12px;
-        color: white;
+        font-size: 25px;
+        color: teal;
         letter-spacing: 2px;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        padding-top: 15px;
+        
     }
 }
 
@@ -234,7 +232,7 @@ h2{
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 20px;
-    color: white;
+    color: teal;
 }
 
 @media (max-width: 600px){
@@ -242,7 +240,7 @@ h2{
         text-align: center;
         text-transform: capitalize;
         font-size: 15px;
-        color: white;
+        color: teal;
     }
 }
 /*end of hero section*/
@@ -273,13 +271,18 @@ h2{
 }
 
 .image-banner-container{
-    max-width: 395px;
+    max-width: 545px;
+    height: 345px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(241, 237, 231);
+    background-image: url(../gracefuerteventura/images_gus/Gus1.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .row{
     background-color: rgb(241, 237, 231);
@@ -319,7 +322,7 @@ h2{
 /*middle banner (quote)*/
 .quote-banner-container{
     width: 100%;
-    height: 120px; /*545px*/
+    height: auto; /*545px*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,14 +332,13 @@ h2{
 
 
 .quote-banner-container span{
-    font-size: 18px;
+    font-size: 22px;
     font-family:'Times New Roman', Times, serif;
-    font-style: italic;
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
     color: slategrey;
-    animation: 4s slide-up linear forwards;
+    animation: 1.5s slide-up linear forwards;
     margin-top: 0%;
     
 }
@@ -354,7 +356,7 @@ h2{
 /*STATEMENT BOX*/
 .statement-box{
     width: 100%;
-    height: 345px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,7 +368,7 @@ h2{
 @media (max-width: 621px){
     .statement-box{
         width: 100%;
-        height: 345px;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -563,6 +565,8 @@ div.desc  a{
 }
 }
 
+/*ORIGINAL SONGS*/
+
 .social{
     /*width: 500px;*/
     height: auto; /*545px*/
@@ -571,11 +575,23 @@ div.desc  a{
 
 .social video{
     width: 100%;
-    height: 250px;
+    height: 520px;
     position: relative;
     opacity: 0.9;
-    box-shadow: 0 0 10px rgb(158 122 87 / 36%);
 }
+
+audio{
+    text-align: center;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 999;
+    width: 150px;
+}
+
+
+
 hr{
     width: 80px;
     margin-left: auto;
@@ -686,6 +702,7 @@ img {vertical-align: middle;}
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
 }
 
+
 @media (max-width: 800px){
     .numbertext{
         color: white;
@@ -705,6 +722,7 @@ img {vertical-align: middle;}
         left: 15%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
     }
+
 }
 
 /* The dots/bullets/indicators */
@@ -780,9 +798,11 @@ img {vertical-align: middle;}
 }/*END OF IMAGE CAROUSEL*/
 /*end of about section*/
 
+
+
 /*contact section*/
 #contact{
-    background-color: rgb(241, 237, 231);
+    background-color: rgb(64, 63, 62);
 }
 #contact h3{
     padding-top: 80px;
@@ -791,7 +811,7 @@ img {vertical-align: middle;}
 .contact-wrapper{
     width: 100%;
     height: auto;
-    background-color: rgb(241, 237, 231);
+    background-color: rgb(64, 63, 62);
 }
 
 .contact-wrapper p{
@@ -812,12 +832,12 @@ img {vertical-align: middle;}
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(241, 237, 231);
+    background-color: rgb(64, 63, 62);
 }
 
 .contact a{
     text-align: center;
-    color: rgb(241, 237, 231);
+    color: rgb(64, 63, 62);
     font-size: 12.5px;
     text-decoration: none;
    
@@ -917,14 +937,10 @@ footer a{
     <div class="hero-section">
         <div class="hero-image-container">
             <div class="hero-image">
-                <video autoplay muted loop playsinline poster="images_gus/gus_logo.jpg">
+                <video autoplay muted loop playsinline poster="">
                     <source src="" type="video/mp4">
                 </video>
                 <div class="clearfix"></div>
-            </div>
-            <div class="hero-text-container">
-                <h1></h1>
-                <h2></h2>
             </div>
         </div>
     </div>
@@ -936,388 +952,158 @@ footer a{
 
 
     <!--INTRO SECTION-->
-    <div class="section-container">
-        <div class="banner-container"><!--top banner-->
-            <div class="image-banner-container"> 
-                <div class="row">
-                    <div class="column">
-                        <a href="images/image1.webp" target="_blank">
-                            <img src="images/image1.jpg" alt="image 1">
-                        </a>
-                    </div>
-                    <div class="column">
-                        <a href="images/image2webp.jpg" target="_blank">
-                            <img src="images/image2.jpg" alt="iamge2">
-                        </a>
-                    </div>
-                    <div class="column">
-                        <a href="images/image3webp.jpg" target="_blank">
-                            <img src="images/image3.jpg" alt="image 3">
-                        </a>
-                    </div>
-                </div>
-            </div> 
-        </div><!--end of top banner-->
-        
-
-        <div> <!--middle banner (quote)-->
-            <div class="quote-banner-container">
-                <span>"You only live once, <br>
-                    but if you do it right, 
-                    <br>once is enough." <br>-cto-
-                </span> 
-            </div>
-        </div> <!--end of middle banner (quote)-->
-
-        
-
-        <div class="statement-box"> <!--statement box-->
-            <div class="statement-container">
-                <p>Hi! Welcome to <br><span style="color: blue;">#fuerteventurafilipina</span><br>
-                Myself, a Non-EU National along with my husband Dan, an EU National (Irish), have taken a leap of faith and decided to pack up our lives in the UK and move to Fuerteventura permanently. We 
-                have created this website to document our journey and we hope to help others who are looking into going through the same venture by sharing our own experiences on the process of moving to this paradise Canarian island.<br>- <br>
-                <!--<a href="#get-to-know-us">Read Our Story</a><br><br>-->
-                </p>
-            </div>
-            <br>
-        </div><!--end of statement box-->
-    </div><!--END INTRO SECTION--> 
-
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-
-
-    <div class="banner-container"><!--bottom banner-->
-        <div class="image-banner-container"> 
-            <div class="row">
-                <div class="column">
-                    <a href="images/grantarajalwebp.jpg" target="_blank" >
-                        <img src="images/grantarajal.jpg" alt="grantarajal">
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="images/corralejo_2024_.webp" target="_blank">
-                        <img src="images/corralejo_2024_.webp" alt="corralejo">
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="images/caletawebp.jpg" target="_blank">
-                        <img src="images/caleta.jpg" alt="caleta">
-                    </a>
-                </div>
-            </div>
-        </div> 
-    </div><!--end of bottom banner-->
-
-
     <div> <!--middle banner (quote)-->
         <div class="quote-banner-container">
-            <span>"Life is not a problem to be solved, <br>
-                but a reality to be experienced" <br>-cto-
+            <span>Singer/Songwriter
             </span> 
         </div>
     </div> <!--end of middle banner (quote)-->
-
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-
-
-    <!--ABOUT SECTION-->
-    <h3 id="get-to-know-us">Get To Know Us</h3> 
-    <div class="statement-box">
-        <div class="about-statement">
-            <p>We first visited Fuerteventura
-                in 2018 and instantly fell in love with the island. <br> The all year round sunshine and warm weather, the quality of life and the beautiful beaches are amongst the many reasons that really got us hooked. Since buying a property in 2021, we have been visiting every 6 to 8 weeks, mainly for the much needed sunny weekend get aways as well as exploring more of the island. Every visit has made us realise how much we want to live in Fuerteventura. One day, after a long and thoughtful conversation, my husband and I made the decision to just <br> <strong>do it!</strong> <br> So we quit our jobs and set our plans in motion.
-            </p>
-        </div>
+    <div class="section-container">
+        <div class="banner-container"><!--top banner-->
+            <div class="image-banner-container"> 
+            </div> 
+        </div><!--end of top banner-->
     </div>
+    <div> <!--middle banner (quote)-->
+        <div class="quote-banner-container">
+            <span>Freelance Musician
+            </span> 
+        </div>
+    </div> <!--end of middle banner (quote)-->
+    <!--END INTRO SECTION--> 
 
+    <div class="white-div"></div> <!--SECTION BREAKER-->
+    <div class="white-div"></div> <!--SECTION BREAKER-->
+
+
+    <!--GIGS SECTION-->
+    <div class="statement-box"> <!--statement box-->
+        <div class="statement-container">
+            <h1>Gigs</h1>
+        </div>
+        <br>
+    </div><!--end of statement box-->
+    <div class="white-div"></div> <!--SECTION BREAKER-->
     <div class="slideshow-container">
         <div class="mySlides fade">
-          <div class="numbertext">"You have succeeded in life <br>when all you really want <br> is only what you really need"<br>-cto-</div>
-          <img src="images/familypic5.webp" alt="collage 1">
+          <div class="numbertext">Empire Rock Bar - Corralejo</div>
+          <img src="images_gus/empirerock2.webp" alt="Empire Rock">
           <div class="text"></div>
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">"One day, life will flash before your eyes...<br>make sure it's worth watching" <br>-cto-</div>
-          <img src="images/familypic4.webp" alt="collage 2">
+          <div class="numbertext">Rock Island Bar - Corralejo </div>
+          <img src="images_gus/rockisland2.webp" alt="Rock Island bar">
           <div class="text"></div>
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext" id="image-quote">"...And above all, watch with glittering eyes <br> the whole world around you <br>because the greatest secrets are always <br>hidden in the most unlikely places. <br> Those who don't believe in magic... <br>will never find it. <br>-Roald Dahl-</div>
-          <img src="images/familypic3.webp" alt="collage 3">
+          <div class="numbertext" id="image-quote">Stoners Irish Bar - Costa De Antigua</div>
+          <img src="images_gus/stoners2_1.webp" alt="Stoners Irish Bar">
           <div class="text"></div>
         </div>
-        
+
+        <div class="mySlides fade">
+            <img src="images_gus/socialmedia_img.webp" alt="Social Media">
+            <div class="text"></div>
+        </div>
+    
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
-        
     </div>
     <br> 
-
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
-
-    <!--FEATURED POSTS-->
-    <div class="feature-section" id="featured-posts">
-        <img src="images/featured_posts.webp" alt="featuredposts">
-    </div>
-    <div class="section">
-        <div class="statement-box">
-            <div class="statement-container">
-                <p><span class="quote"><strong><em>"A goal without a plan is just a wish"</em><br>- cto -</strong><br></span></p>
-                <p>For our featured posts, we aim to document the 4 crucial steps of relocating to Fuerteventura.<br>
-                    - <br>
-                    <strong><em>Find A Home</em></strong><br>
-                    <strong><em>Register At The Local Townhall</em></strong><br>
-                    <strong><em>Apply For Residency - EU Citizen</em></strong><br>
-                    <strong><em>Apply For Residency - Non-EU Citizen</em></strong><br>
-                    - <br>
-                    If you want learn more about the process of each stage or to follow and track our progress, please visit our<a href="blog.html" target="_blank">Blog</a><br>
-                    Wish us luck! &#129310;
-                </p>
-            </div>
-        </div>
-        <div class="beige-div"></div>
-    </div>
-    <div class="beige-div"></div>
-    <!--END OF FEATURED POSTS-->
-
     <div class="white-div"></div>
     <div class="white-div"></div>
-    
-    
-    <div class="statement-box">
-        <div class="about-statement">
-            <p>
-                With my husband being an Irish Citizen, our plan is to apply for his residency first -  <a href="https://balcellsgroup.com/move-to-spain-as-an-eu-citizen/#European_Union_citizens_moving_to_Spain_Do_you_actually_need_a_residence_permit" target="_blank"><strong>Tarjeta de Identification del Extranjero - TIE</strong></a>. Following that, we plan to apply for my <a href="https://balcellsgroup.com/family-member-eu-citizen/" target="_blank"><strong>EU family member residence card</strong>,</a> which, at the time of writing this post, the EU family member residence card is valid for <a href="https://europa.eu/youreurope/citizens/residence/documents-formalities/non-eu-family-members-residence-card/index_en.htm" target="_blank"> <strong>5 years</strong></a>  <i class="fa-regular fa-face-sad-cry"></i> which then requires renewal <span style="font-size: 18px;">&#128530;</span>. But that's neither here or now, so in the meantime, join us on our journey and explore Fuerteventura with us! <br> <span>&#x1F495;</span>
-                <!--The good news for me is that I only require 2 years of residency to be eligible to apply for <a href="https://administracion.gob.es/pag_Home/en/Tu-espacio-europeo/derechos-obligaciones/ciudadanos/residencia/obtencion-nacionalidad.html" target="_blank"><strong>Spanish Citizenship</strong></a>, all thanks to the Philippines being a Spanish colony many moons ago <span style='font-size:18px;'>&#128522;</span>.-->
-            </p>
-        </div>
-    </div>
-    <div class="white-div"></div>
-    <div class="white-div"></div>
-    
-    <!--END OF ABOUT SECTION-->
+    <!--END OF GIG SECTION-->
 
 
-    <!--FEATURED RECOMMENDATIONS-->
-    <div class="feature-section">
-        <img src="images/featured_recommendations.webp" alt="featured recommendations">
-    </div>
-    <div class="section">
-        <div class="statement-box">
-            <div class="statement-container">
-                <p><span class="quote"><strong><em>"Each moment is a place <br> you've never been"</em><br>- cto -</strong></span><br></p>
-                <div class="empty-div1"></div>
-                <div>
-                    <p>During our multiple trips to the island, we have discovered some <br>really notable restaurants and bars that we just keep <br>coming back to everytime we visit. Check out some of our favourites below. <br></p>
-                </div>
-            </div>
-        </div>
-        <div class="empty-div3"></div>
-    </div>
-    <!--FEATURED RECOMMENDATIONS ENDS HERE-->
-
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-
-    <!--PROJECT: RESTAURANTS-->
+    <!--PROJECT: ACOUSTIC COVERS-->
     <div class="project-section">
-        <h3>Our Favourite <span>Restaurants</span><br><span style="font-size: 10.5px; font-family:'Times New Roman', Times, serif">Disclaimer: We have no affiliation with these establishments,<br> nor are we endorsing them in return for any fee or favours. <br> We are featuring them here based on geniune experience <br> at our own expense.</span><br></h3>
+        <div class="statement-box"> <!--statement box-->
+            <div class="statement-container">
+                <h2>Acoustic Covers</h2>
+            </div>
+            <br>
+        </div><!--end of statement box-->
+        <div class="white-div"></div>
         <div class="responsive">
             <div class="gallery">
-            <a href="https://www.facebook.com/Aamares.Restaurante" target="_blank">
-                <img src="images/amares.webp" alt="Amares" width="600" height="400">
-            </a>
-            <div class="desc">Amares</div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EeYaC4Tp4Fw?si=qCH-gVdVLMzCCxkD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
         </div>
         <div class="responsive">
             <div class="gallery">
-            
-            <a href="https://www.facebook.com/Nestorsrestaurante" target="_blank">
-                <img src="images/nestors.webp" alt="Nestors" width="600" height="400">
-            </a>
-            <div class="desc">Nestor's</div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yfShBZ0djlw?si=7P_L0LcvUEkOPzjP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
         </div>
         <div class="responsive">
             <div class="gallery">
-            
-            <a href="https://www.facebook.com/smilefuerteventura" target="_blank">
-                <img src="images/smileterraza.webp" alt="smileterraza" width="600" height="400">
-            </a>
-            <div class="desc">Smile Terraza</div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dv5bV8uc8Y4?si=z1W1sD-4bmpflpC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
         </div>
         <div class="responsive">
             <div class="gallery">
-            
-            <a href="https://www.facebook.com/profile.php?id=61558469307333" target="_blank">
-                <img src="images/elpatio.webp" alt="elpatio" width="600" height="400">
-            </a>
-            <div class="desc">El Patio</div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4IVUsDBbEVs?si=laYrfkPwj6kz_OZm&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
         </div>
         <div class="clearfix"></div>
     </div>
-    <div class="desc"><p class="facebook">View more restaurant recommendations on our <span style="color: blue;"><br>Facebook </span>Page</p>
+    <div class="desc"><p>Watch more videos on <a href="https://www.youtube.com/@gusabarquezmusic" target="_blank"><span style="color: red;"><br>YouTube</span></a> </p>
     </div>
-    <!--PROJECT: RESTAURANTS ENDS HERE-->
+    <!--PROJECT: END OF ACOUSTIC COVERS-->
 
     <div class="white-div"></div> <!--SECTION BREAKER-->
     <div class="white-div"></div> <!--SECTION BREAKER-->
 
-    <!--FEATURED LIVE MUSIC-->
-    <div class="feature-section">
-        <img src="images/mustsee_livemusic.webp" alt="mustseelivemusic">
-    </div>
-    <div class="section">
-        <div class="statement-box">
-            <div class="statement-container">
-                <p><span class="quote"><strong><em>"If you do what you love, you'll never work a day in your life"</em><br>- cto -</strong></span><br><br></p>
-                <div>
-                    <p>My husband and I love watching live music. We have come across some really talented freelance musicians and we love how passionate they are with what they do. They're enganging, fun and and generally entertaining. Check out some of our favourites below.</p>
-                </div>
-            </div>
+    <!--ORIGINAL MUSIC-->
+    <div class="statement-box">
+        <div class="statement-container">
+            <h2>Original Songs</h2>
         </div>
-        <div class="beige-div"></div>
+        <br>
     </div>
-    <div class="white-div"></div> <!--SECTION BREAKER-->
     <div class="white-div"></div> <!--SECTION BREAKER-->
     <div class="video-box">
         <div class="social">
-            <div class="desc">Gus Abarquez <br>Rock Island Bar - <br>Corralejo</div>
-            <video autoplay muted loop playsinline controls poster="images/gus_vid_background.webp">
-                <source src="videos/gus_abarquez.mp4" type="video/mp4">
+            <div class="desc">Fall back</div>
+            <video autoplay muted loop playsinline poster="images_gus/cover1.webp">
+                <source src="" type="video/mp4">
             </video>
-            <div class="desc">Watch the full video on our <a href="https://youtu.be/DH5wJQonOzA" target="_blank" style="color: red;">Youtube</a> channel <br>- <br> Learn more about Gus <a href="https://grace-gardner.github.io/gusabarquez" target="_blank" style="color: rgb(158, 122, 87); text-decoration: underline;">here</a></div>
-            <div class="desc"></div>
+            <audio controls src="music/Empty Canvas - Fall Back.mp3"></audio>
         </div>
     </div>
-    <br>
-    <hr>
-    
     <div class="video-box">
         <div class="social">
-            <div class="desc">Ollie White <br> Smokehouse Bar - <br>Caleta De Fuste</div>
-            <video autoplay muted loop playsinline controls poster="images/ollie_vid_background.webp">
-                <source src="videos/ollie_white.mp4" type="video/mp4">
+            <div class="desc">How Far will You Go</div>
+            <video autoplay muted loop playsinline poster="images_gus/cover2.webp">
+                <source src="" type="video/mp4">
             </video>
-            <div class="desc">Watch the full video on our <a href="" target="_blank" style="color: red;">Youtube</a> channel</div>
+            <audio controls src="music/Empty Canvas - How Far Will you Go for Love.mp3"></audio>
         </div>
     </div>
-    <br> 
-    <!--END OF FEATURED LIVE MUSIC-->
+    <div class="desc"><p>Listen to more Original Songs on <a href="https://open.spotify.com/artist/0BA5vEs9Kdxb70t65prXd2?fbclid=PAAaYg5Lv5WHXRJCUkee-AgO2mqi8RXbNtrLup2RL8kOoD5uRwM7bRW-NTJGM" target="_blank"><span style="color: green;"><br>Spotify</span></a></p>
+    </div>
+    <!--END OF ORIGINAL MUSIC-->
 
     <div class="white-div"></div> <!--SECTION BREAKER-->
     <div class="white-div"></div> <!--SECTION BREAKER-->
 
-
-    <!--PLACES TO VISIT-->
-    <div class="feature-section" id="featured-posts">
-        <img src="images/places_to_visit.webp" alt="featuredposts">
-    </div>
-    <div class="section">
-        <div class="statement-box">
-            <div class="statement-container">
-                <p><span class="quote"><strong><em>"We travel not to escape life,<br>but for life not to escape us"</em><br>- cto -</strong></span><br></p>
-                <div class="empty-div1"></div>
-                <div>
-                    <p>The island is such an amazing, beautiful place with lots of interesting places to explore.<br>Check out some of the day trips we've done so far.</p>
-                </div>
-            </div>
-        </div>
-        <div class="empty-div3"></div>
-    </div>
-
-    <div class="responsive">
-        <div class="gallery">
-        <a href="https://youtube.com/shorts/YX7FVVtu1m0?feature=shared" target="_blank">
-            <img src="images/caleta.webp" alt="Amares" width="600" height="400">
-            <div class="desc">View More</div>
-        </a>
-        </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-        <a href="https://youtube.com/shorts/VJ3cIUotox8?feature=shared" target="_blank">
-            <img src="images/puerto_del_rosario.webp" alt="Nestors" width="600" height="400">
-            <div class="desc">View More</div>
-        </a>
-        </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-        <a href="https://youtu.be/aBU7H7HQ3pc?feature=shared" target="_blank">
-            <img src="images/corralejo_2024_.webp" alt="smileterraza" width="600" height="400">
-            <div class="desc">View More</div>
-        </a>
-        </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-        
-        <a href="https://youtu.be/nE4m7gsEwr0" target="_blank">
-            <img src="images/grantarajal.webp" alt="elpatio" width="600" height="400">
-            <div class="desc">View More</div>
-        </a>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-
-    <!--END OF PLACES TO VISIT-->
-
-
-
-    <!--SPECIAL MENTION: TITAN-->
-    <div class="feature-section">
-        <img src="images/special_mention.webp" alt="specialmention">
-    </div>
-    <div class="section">
-        <div class="statement-box">
-            <div class="statement-container">
-                <p><span class="quote"><strong><em>"The best things in life are the people we love, the places we've been & the memories we make along the way"</em><br>- cto -</strong></span><br></p>
-                <div>
-                    <p>Meet Titan! He's our neighbour's dog and he's just so cute and adorable that we wanted to feature him in our blog!</p>
-                </div>
-            </div>
-        </div>
-        <div class="titan">
-            <a target="_blank" href="images/titan.webp">
-                <img src="images/titan.jpg" alt="cutest dog">
-            </a>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <!--SPECIAL MENTION: TITAN ENDS HERE-->
-
-    <div class="white-div"></div> <!--SECTION BREAKER-->
-    <div class="white-div"></div> <!--SECTION BREAKER-->
 
     
-
-    
-
-
-    <div class="white-div"></div>
-    <div class="white-div"></div>
-    <div class="white-div"></div>
-    <div class="white-div"></div>
-
     <!--CONTACT-->
     <div id="contact">
-        <h3>Let's Get Social <em>!</em></h3>
+        <h3>Now taking bookings for private events <em>!</em></h3>
         <div class="contact-wrapper">
-            <p>Follow us on Social Media to get notified of the latest blogs, photos, videos and more. <br> Thank You! <span style="color: black;">&#9829;</span> <br>
+            <p>Get in touch via Social Media to find out more<br>
             </p> 
             <div class="contact">
                 <a href="https://www.facebook.com/profile.php?id=61558469307333" target="_blank">
@@ -1335,7 +1121,7 @@ footer a{
     </div>
     <br>
     <div class="arrow-up">
-        <a href="#home"><span style='font-size:15px;'>&#8593;</span> Back to Top <span style='font-size:15px;'>&#8593;</span></a>
+        <a href="index.html"><span style='font-size:15px;'>&#8593;</span> Back to FuerteventuraFilipina <span style='font-size:15px;'>&#8593;</span></a>
     </div>
     <!--CONTACT SECTION ENDS HERE-->
 
